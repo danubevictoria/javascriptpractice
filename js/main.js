@@ -41,4 +41,20 @@ $(document).ready(function (){
 	console.log(person.lastname);
 
 	// Create an array with multiple objects, each with multiple properties. Use a for loop to console.log the various properties.
+	var person2 = {
+		age: 24,
+		firstname: "Basil",
+		lastname: "Phan"
+	}
+
+	var multiple = [
+		person,
+		person2
+	];
+
+	for (var i = 0; i < multiple.length; i++) {
+		console.log(multiple[i].age);
+		console.log(multiple[i].firstname);
+		console.log(multiple[i].lastname);
+	}
 });
